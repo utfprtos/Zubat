@@ -10,7 +10,8 @@ RM := rm -rf
 -include sources.mk
 -include utilities/subdir.mk
 -include startup/subdir.mk
--include source/utfpRTOS/so/subdir.mk
+-include source/utfpRTOS/cpu/_Model/so/subdir.mk
+-include source/utfpRTOS/cpu/FRDM_K64F/so/subdir.mk
 -include source/utfpRTOS/subdir.mk
 -include source/subdir.mk
 -include sdmmc/src/subdir.mk

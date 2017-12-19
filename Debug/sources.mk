@@ -38,7 +38,8 @@ lwip/src/netif/ppp \
 sdmmc/src \
 source \
 source/utfpRTOS \
-source/utfpRTOS/so \
+source/utfpRTOS/cpu/FRDM_K64F/so \
+source/utfpRTOS/cpu/_Model/so \
 startup \
 utilities \
 

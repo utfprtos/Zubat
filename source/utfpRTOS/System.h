@@ -9,17 +9,12 @@
 #define UTFPRTOS_SYSTEM_H_
 #include "utfpRTOS/so/Memory.h"
 #include "utfpRTOS/so/IO.h"
+#include "utfpRTOS/so/SO.h"
 
-namespace utfpRTOS_NS {
-
-class System {
-public:
-	Memory memory;
-	IO io;
-	System();
-	virtual ~System();
-};
-
-} /* namespace utfpRTOS_NS */
-
+	class System {
+	public:
+		Memory memory;
+		IO io;
+		SO so;
+	};
 #endif /* UTFPRTOS_SYSTEM_H_ */

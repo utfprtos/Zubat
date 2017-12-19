@@ -8,11 +8,10 @@
 #ifndef UTFPRTOS_SO_IO_H_
 #define UTFPRTOS_SO_IO_H_
 
-namespace utfpRTOS_NS {
-
 class IO {
+public:
+	void printf(const char * restrict);
 };
 
-} /* namespace utfpRTOS_NS */
 
 #endif /* UTFPRTOS_SO_IO_H_ */

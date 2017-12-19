@@ -28,36 +28,23 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
-/**
- * @file    MK64FN1M0xxx12_Project.cpp
- * @brief   Application entry point.
- */
-#include <stdio.h>
-#include "board.h"
-#include "peripherals.h"
-#include "pin_mux.h"
-#include "clock_config.h"
-#include "MK64F12.h"
+//#define _Model
 #define FRDM_K64F
 
 #include "utfpRTOS/System.h"
 /* TODO: insert other include files here. */
 
 /* TODO: insert other definitions and declarations here. */
-using namespace utfpRTOS_NS;
 /*
  * @brief   Application entry point.
  */
 int main(void) {
 	System system;
-  	/* Init board hardware. */
-    BOARD_InitBootPins();
-    BOARD_InitBootClocks();
-    BOARD_InitBootPeripherals();
-  	/* Init FSL debug console. */
-    BOARD_InitDebugConsole();
 
-    printf("Hello World\n");
+	system.so.init();
+
+
+    system.io.printf("Hello World\n");
 
     /* Force the counter to be placed into memory. */
     volatile static int i = 0 ;

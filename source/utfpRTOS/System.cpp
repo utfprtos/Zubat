@@ -7,15 +7,3 @@
 
 #include <utfpRTOS/System.h>
 
-namespace utfpRTOS_NS {
-
-System::System() {
-	// TODO Auto-generated constructor stub
-
-}
-
-System::~System() {
-	// TODO Auto-generated destructor stub
-}
-
-} /* namespace utfpRTOS_NS */
